@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+
 # coding: utf-8
 
 # ### Instructions
@@ -21,13 +21,13 @@
 
 
 # Dependencies
+import os
 import tweepy
 import time
 import json
 import random
 import requests as req
 import datetime
-import os
 
 
 # In[ ]:
@@ -85,6 +85,7 @@ def WeatherTweet():
 
 
 # Set timer to run every 1 minute (for testing a Twitter deployment)
+# Once deployed and things are working, you may want to change this! Or turn off your app. 
 while(True):
     WeatherTweet()
     time.sleep(60)
